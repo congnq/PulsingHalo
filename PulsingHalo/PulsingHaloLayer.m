@@ -34,6 +34,9 @@
         [self addSublayer:self.effect];
         
         [self _setupDefaults];
+        self.effect.borderWidth = 2;
+        self.effect.backgroundColor = (__bridge CGColorRef _Nullable)([UIColor redColor]);
+        self.effect.borderColor = [UIColor whiteColor].CGColor;
     }
     return self;
 }
